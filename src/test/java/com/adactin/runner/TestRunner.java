@@ -20,8 +20,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src\\test\\java\\com\\adactin\\feature\\",
-		tags = {"@TC14"},
-		dryRun = false,
+		tags = {"@TC1,@TC2"},
+		dryRun = false,strict=true,
 		glue = "com.adactin.stepdefinition",
 		monochrome = true
 		)

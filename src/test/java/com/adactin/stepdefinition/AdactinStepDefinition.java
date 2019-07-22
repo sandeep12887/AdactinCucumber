@@ -41,7 +41,7 @@ public class AdactinStepDefinition extends AdactinBaseClass {
 
 	@Then("^User should verify the Welcome to AdactIn Group of Hotels is displayed in the login page$")
 	public void user_should_verify_the_Welcome_to_AdactIn_Group_of_Hotels_is_displayed_in_the_login_page() {
-		String actual = getElementText(pm.getLp().getValidateText());
+		String actual = getElementText(pm.getLp().getValidateText());//ans
 		Assert.assertEquals("Welcome to AdactIn Group of Hotels", actual);
 	}
 
@@ -130,7 +130,7 @@ public class AdactinStepDefinition extends AdactinBaseClass {
 
 	@Then("^User should verify the error message is displayed$")
 	public void user_should_verify_the_error_message_is_displayed() throws Throwable {
-		String text = getElementText(pm.getHp().getErrorMessage());
+		String text = getElementText(pm.getHp().getErrorMessage());//
 		Assert.assertEquals("Check-In Date shall be before than Check-Out Date", text.trim());
 
 	}
